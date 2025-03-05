@@ -14,7 +14,10 @@ This script was used to build the touchpad for the MNT Reform Next based on an A
 
 It has only been tested with rectangular shapes but the OpenSCAD script that generates the main pattern works with any shape even custom dxf outlines. The python script that converts that into usable PCB features might fail to make something sensible out of odd shapes though as it might have unintended hard baked assumptions, it should be fairly easy to adapt though.
 
-Then OpenSCAD script comes courtesy of Texas Instrument. I modified it a bit to work better with generating a PCB out of the exported dxf.
+The OpenSCAD script comes courtesy of Texas Instruments. I modified it a bit to work better with generating a PCB out of the exported dxf.
+
+Why not generate KiCad files? Mostly because the KiCad file format is really complex and any industry EDA tool including KiCad support the Eagle XML file format so it is usable for more people.
+The Eagle XML file format is also equally openly documented and very easy to read and write. So it is not a proprietary file format even if Eagle itself is not open.
 
 Installation
 -----------
